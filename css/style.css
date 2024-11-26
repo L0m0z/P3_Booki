@@ -63,9 +63,44 @@ a {
 /****** HEADER ***********/
 
 header {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
+.header img{
+    height: 19px;
+    width: 61.09px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    gap: 10px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 68px;
+    width: 112px;
+    height: 19px;
+    top: 16px;
+}
+
+.header nav ul li a:hover {
+    background-color: white;
+    color: #0065FC;
+}
+
+button {
+    border-radius: 39px;
+}  
+
+.Filtres {
+    display: inline-block;
+    justify-content: flex-start;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
