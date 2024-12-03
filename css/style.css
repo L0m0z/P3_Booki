@@ -1,3 +1,33 @@
+/* Reset CSS simple et optimisé */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%; /* Empêche le zoom sur mobile */
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+}
+
+
+
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -40,7 +70,6 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -66,16 +95,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    height: 90px;
 }
 
 .header img{
     height: 19px;
     width: 61.09px;
-    padding-top: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    padding-left: 50px;
     gap: 10px;
 }
 
@@ -83,29 +108,143 @@ header {
     list-style: none;
     display: flex;
     gap: 68px;
-    width: 112px;
-    height: 19px;
-    top: 16px;
+    
 }
+
+.header ul li{
+    padding: 10px;
+    border-top: 3px solid transparent ;
+}
+
+
 
 .header nav ul li a:hover {
     background-color: white;
     color: #0065FC;
+    border-top: 3px solid #0065FC;
 }
+
+nav{
+    height: 100%;
+}
+
 
 button {
     border-radius: 39px;
 }  
 
-.Filtres {
-    display: inline-block;
-    justify-content: flex-start;
+
+/****** FORMULAIRE ***********/
+
+
+.Formulaire .Formulaire.de.recherche {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20px;
+
 }
+
+
+
+.Formulaire .Formulaire.de.recherche form {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.Formulaire .Formulaire.de.recherche label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+
+}
+
+
+
+.Formulaire .Formulaire.de.recherche input[type="text"] {
+    width: 200px;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 1px;
+    font-size: 14px;
+
+}
+
+
+
+.Formulaire .Formulaire.de.recherche input[type="text"]::placeholder {
+    color: #aaa;
+
+}
+
+
+
+.Formulaire .Formulaire.de.recherche button {
+    background-color: #0055FF;
+    color: white;
+    border: none;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+.Formulaire .Formulaire.de.recherche button:hover {
+    background-color: #0040cc;
+
+}
+
+  /****** FILTRES ***********/
+
+    .Filtres {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .Filtres form{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      
+
+}
+
+    .Filtres button{
+        font-size: 14px; 
+        padding: 8px 16px; 
+        border-radius: 20px; 
+        border: 1px solid
+        cursor: pointer; 
+        background-color: white;
+
+     }
+
+    .Filtres button:hover {
+        background-color: #56abeb; 
+          
+          }
+ 
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .hebergements-and-populaires section {
@@ -117,8 +256,44 @@ button {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
+
+.hebergements .card {
+    display: flex; 
+    flex-direction: column;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px);
+    margin-top: 20px;
+
+}
+
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hebergements img {
+    width: 100%; 
+    height: auto; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.hebergements .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -165,7 +340,41 @@ button {
     margin-bottom: 5px;
 }
 
+/****** ACTIVITES ***********/
+.Activités{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+}
 
+.Activités img{
+    height: 210px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Activités-card{
+    
+}
+/****** FOOTER ***********/
+
+.directionRow{
+    display: flex;
+	justify-content: space-between;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.directionRow p {
+    font-size: 10px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
