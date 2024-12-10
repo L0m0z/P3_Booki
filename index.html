@@ -29,13 +29,15 @@
 
 
             <div class="Formulaire">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <section class="Formulaire de recherche">
                     <form action="" method="post">
-                        <label for="localisation">Lieu </label>
+                        <button type="submit" class="localisation">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
                         <input type="text" name="Lieu" id="localisation" placeholder="Marseille, France" required>
-                        <button type="submit">Rechercher</button>
+                        <button type="submit" class="search">Rechercher</button>
                     </form>
                 </section>
             </div>
@@ -44,12 +46,21 @@
                 <section class="Filtres">
                 <form action="/Filtrer" method="post">
                     <p> <strong>Filtres:</strong></p>
-                    <button type="submit" name="filtre" value="economique">Economique</button>
-                    <button type="submit" name="filtre" value="familiale">Familiale</button>
-                    <button type="submit" name="filtre" value="romantique">Romantique</button>
-                    <button type="submit" name="filtre" value="nos_pepites">Nos pépites</button>
+                    <button type="submit" name="filtre" value="economique">
+                        <i class="fa-solid fa-money-bill"></i> Economique
+                    </button>
+                    <button type="submit" name="filtre" value="familiale">
+                        <i class="fa-solid fa-person"></i> Familiale
+                    </button>
+                    <button type="submit" name="filtre" value="romantique" >
+                    <i class="fa-solid fa-heart"></i> Romantique
+                </button>
+                    <button type="submit" name="filtre" value="nos_pepites">
+                        <i class="fa-solid fa-fire"></i> Nos pépites
+                    </button>
                 </form>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="information">
+                    <i class="fa-solid fa-info"></i><i class="fa-regular fa-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
                 </section>
             </div>
 
@@ -252,49 +263,42 @@
                         </a>
                     </div>
                 </section>
-
-            </div>
-            <div class="Activités">
-                        <h2 class="section-title">Activités à Marseille</h2>
-                        <article class="card">
+             </div>
+           
+           
+             <div class="Activités">
+                <div class="activites-title">
+                    <h2>Activités à Marseille</h2>
+                </div>
+                <div class="activites-cards">
+                    <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg"
                         alt="Image du Vieux-Port">
-                            <div class="card-content">
-                                <div class="card-txt">
                                     <h3 class="card-title">Vieux-Port</h3>
-                                </div>
-                            </div>
                         </article>
                         <article class="card">
                             <img src="./images/activites/paul-hermann.jpg"
                             alt="Image du Fort de Pomègues">
-                            <div class="card-content">
-                                <div class="card-txt">
                                     <h3 class="card-title">Fort de Pomègues</h3>
-                                </div>
-                            </div>
                         </article>
                         <article class="card">
                             <img src="./images/activites/kilyan-sockalingum.jpg"
                             alt="Image du Parc national des Calanques">
-                            <div class="card-content">
-                                <div class="card-txt">
                                     <h3 class="card-title">Parc national des Calanques</h3>
-                                </div>
-                            </div>
                         </article>
                         <article class="card">
                             <img src="./images/activites/florian-wehde.jpg"
                             alt="Image de Notre-Dame-de-la-Garde">
-                            <div class="card-content">
-                                <div class="card-txt">
                                     <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                                </div>
-                            </div>
                         </article>
                     </div>
+                    </div>
                  </main>
-        <footer>
+       
+       
+       
+       
+          <footer>
             <div class="directionRow">
             <article>
                 <h3>À propos</h3>
