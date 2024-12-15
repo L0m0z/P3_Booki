@@ -27,42 +27,44 @@
         </header>
         <main>
 
+            <section class="filtre-and-search">
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
 
-            <div class="Formulaire">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <section class="Formulaire de recherche">
-                    <form action="" method="post">
-                        <button type="submit" class="localisation">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </button>
-                        <input type="text" name="Lieu" id="localisation" placeholder="Marseille, France" required>
-                        <button type="submit" class="search">Rechercher</button>
-                    </form>
-                </section>
-            </div>
-
-            <div class="Filtres">
-                <section class="Filtres">
-                <form action="/Filtrer" method="post">
-                    <p> <strong>Filtres:</strong></p>
-                    <button type="submit" name="filtre" value="economique">
-                        <i class="fa-solid fa-money-bill"></i> Economique
+                <form class="Formulaire" action="" method="post">
+                    <button type="submit" class="localisation">
+                        <i class="fa-solid fa-location-dot"></i>
                     </button>
-                    <button type="submit" name="filtre" value="familiale">
-                        <i class="fa-solid fa-person"></i> Familiale
-                    </button>
-                    <button type="submit" name="filtre" value="romantique" >
-                    <i class="fa-solid fa-heart"></i> Romantique
-                </button>
-                    <button type="submit" name="filtre" value="nos_pepites">
-                        <i class="fa-solid fa-fire"></i> Nos pépites
-                    </button>
+                    <input type="text" name="Lieu" id="localisation" placeholder="Marseille, France" required>
+                    <button type="submit" class="search">Rechercher</button>
                 </form>
-                <p class="information">
-                    <i class="fa-solid fa-info"></i><i class="fa-regular fa-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+
+                <section class="Filtres">
+                    <h3>Filtres</h3>
+                    <div class="btn-filtres">
+                        <button name="filtre" value="economique">
+                            <i class="fa-solid fa-money-bill"></i> Economique
+                        </button>
+                        <button name="filtre" value="familiale">
+                            <i class="fa-solid fa-person"></i> Familiale
+                        </button>
+                        <button name="filtre" value="romantique">
+                            <i class="fa-solid fa-heart"></i> Romantique
+                        </button>
+                        <button name="filtre" value="nos_pepites">
+                            <i class="fa-solid fa-fire"></i> Nos pépites
+                        </button>
+                    </div>
                 </section>
-            </div>
+
+                <div class="information">
+                    <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -190,9 +192,9 @@
                                 </div>
                             </article>
                         </a>
-        
-        
-                        
+
+
+
                     </div>
                 </section>
                 <section class="populaires">
@@ -263,61 +265,57 @@
                         </a>
                     </div>
                 </section>
-             </div>
-           
-           
-             <div class="Activités">
+            </div>
+
+
+            <div class="Activités">
                 <div class="activites-title">
                     <h2>Activités à Marseille</h2>
                 </div>
                 <div class="activites-cards">
                     <article class="card">
-                            <img src="./images/activites/reno-laithienne.jpg"
-                        alt="Image du Vieux-Port">
-                                    <h3 class="card-title">Vieux-Port</h3>
-                        </article>
-                        <article class="card">
-                            <img src="./images/activites/paul-hermann.jpg"
-                            alt="Image du Fort de Pomègues">
-                                    <h3 class="card-title">Fort de Pomègues</h3>
-                        </article>
-                        <article class="card">
-                            <img src="./images/activites/kilyan-sockalingum.jpg"
-                            alt="Image du Parc national des Calanques">
-                                    <h3 class="card-title">Parc national des Calanques</h3>
-                        </article>
-                        <article class="card">
-                            <img src="./images/activites/florian-wehde.jpg"
-                            alt="Image de Notre-Dame-de-la-Garde">
-                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                        </article>
-                    </div>
-                    </div>
-                 </main>
-       
-       
-       
-       
-          <footer>
+                        <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port">
+                        <h3 class="card-title">Vieux-Port</h3>
+                    </article>
+                    <article class="card">
+                        <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
+                        <h3 class="card-title">Fort de Pomègues</h3>
+                    </article>
+                    <article class="card">
+                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+                        <h3 class="card-title">Parc national des Calanques</h3>
+                    </article>
+                    <article class="card">
+                        <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <footer>
             <div class="directionRow">
-            <article>
-                <h3>À propos</h3>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales </p>
-                <p>Données et confidentialité </p>
-            </article>
-            <article>
-                <h3>Nos hébergements</h3>
-                <p>Charte qualité</p>
-                <p>Proposer votre hôtel </p>
-            </article>
-            <article>
-                <h3>Assistance</h3>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
-            </article>
-        </div>
-    </footer>
+                <article>
+                    <h3>À propos</h3>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales </p>
+                    <p>Données et confidentialité </p>
+                </article>
+                <article>
+                    <h3>Nos hébergements</h3>
+                    <p>Charte qualité</p>
+                    <p>Proposer votre hôtel </p>
+                </article>
+                <article>
+                    <h3>Assistance</h3>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </article>
+            </div>
+        </footer>
     </div>
 </body>
 

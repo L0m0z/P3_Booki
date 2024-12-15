@@ -11,7 +11,8 @@ html, body {
     height: 100%;
     font-family: sans-serif;
     line-height: 1.5;
-    -webkit-text-size-adjust: 100%; /* Empêche le zoom sur mobile */
+    -webkit-text-size-adjust: 100%;
+    /* Empêche le zoom sur mobile */
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -o-text-size-adjust: 100%;
@@ -98,7 +99,7 @@ header {
     height: 90px;
 }
 
-.header img{
+.header img {
     height: 19px;
     width: 61.09px;
     gap: 10px;
@@ -108,46 +109,60 @@ header {
     list-style: none;
     display: flex;
     gap: 68px;
-    
+
 }
 
-.header ul li{
+.header ul li {
     padding: 0px;
-    border-top: 3px solid transparent ;
+    border-top: 3px solid transparent;
 }
 
 
 
-.header nav ul li a:hover {
+.header nav ul li:hover {
     background-color: white;
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 
-nav{
+nav {
     height: 100%;
 }
 
 
 button {
     border-radius: 39px;
-}  
+}
+
+
+
+/***************************************FILTRES ET RECHERCHE**********************/
+
+.filtre-and-search {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 
 /****** FORMULAIRE ***********/
 
 
-.Formulaire .Formulaire.de.recherche {
+
+
+
+.Formulaire {
     display: flex;
-    flex-direction: column;
+
     align-items: left;
-    margin-top: 20px;
+
 
 }
 
 
 
-.Formulaire .Formulaire.de.recherche form {
+.Formulaire form {
     display: flex;
     align-items: center;
 
@@ -155,7 +170,7 @@ button {
 
 
 
-.Formulaire .Formulaire.de.recherche label {
+.Formulaire label {
     font-size: 16px;
     color: #333;
     margin-right: 10px;
@@ -164,7 +179,7 @@ button {
 
 
 
-.Formulaire .Formulaire.de.recherche input[type="text"] {
+.Formulaire input[type="text"] {
     width: 200px;
     padding: 11px;
     border: 1px solid #ccc;
@@ -176,14 +191,14 @@ button {
 
 
 
-.Formulaire .Formulaire.de.recherche input[type="text"]::placeholder {
+.Formulaire input[type="text"]::placeholder {
     color: #aaa;
 
 }
 
 
 
-.Formulaire .Formulaire.de.recherche .search {
+.Formulaire .search {
     background-color: #0055FF;
     color: white;
     border: none;
@@ -198,7 +213,7 @@ button {
 
 }
 
-.Formulaire .Formulaire.de.recherche .localisation {
+.Formulaire .localisation {
     background-color: #F2F2F2;
     border: none;
     border-top-right-radius: 1px;
@@ -208,62 +223,80 @@ button {
     padding: 13px 20px;
 }
 
-.fa-location-dot{
+.fa-location-dot {
     color: #333;
 }
-.Formulaire .Formulaire.de.recherche button:hover {
+
+.Formulaire button:hover {
     background-color: #0040cc;
 
 }
 
 
 
-  /****** FILTRES ***********/
+/****** FILTRES ***********/
 
-    .Filtres {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
-        font-size: 20px;
-    }
+.Filtres {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
 
-    .Filtres form{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      
+.Filtres form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
 
 }
 
-    .Filtres button{
-        font-size: 14px; 
-        padding: 8px 16px; 
-        border-radius: 20px; 
-        border: 1px solid #cccccc ;
-        cursor: pointer; 
-        background-color: white;
-        font-weight: bold;
+.btn-filtres {
+    display: flex;
+    gap: 10px;
+}
 
-     }
+.btn-filtres button {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
 
-    .Filtres button:hover {
-        background-color: #DEEBFF; 
-          
-          }
-          
-    .information{
-            font-size: 13px;
-        }
-    
-    .fa-info{
-            padding-right: 6px;
-            
-        }
+}
 
-    .fa-solid-fa-money-bill{
-        padding: 5px;
-    }
+.Filtres button:hover {
+    background-color: #DEEBFF;
+
+}
+
+.information {
+    font-size: 13px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fa-info {
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    /* padding: 5px; */
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.fa-solid-fa-money-bill {
+    padding: 5px;
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -286,34 +319,51 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
+
 }
+
 .hebergements-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 32px;
 }
-.hebergements-cards .card{
-    display: flex; 
+
+
+
+.hebergements-cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+
+}
+
+.hebergements-cards a {
+    width: 31%;
+
+}
+
+.hebergements-cards .card {
+    display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    width: calc(33.33% - 20px);
-    margin-top: 20px;
     flex-wrap: wrap;
 
 }
 
+
 .hebergements img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: 116px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    padding: 5px;
 }
 
 .hebergements .card-content {
     padding: 15px;
+    height: 105px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -321,7 +371,7 @@ button {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 89%;
 }
 
 .populaires-title {
@@ -340,6 +390,7 @@ button {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    padding: 5px;
 }
 
 .populaires-cards .card-content {
@@ -366,38 +417,52 @@ button {
 
 /****** ACTIVITES ***********/
 
-.Activités{
+.Activités {
     display: flex;
     margin-top: 20px;
     padding: 10px;
     flex-direction: column;
 }
 
-.activites-title{
+.activites-title {
     margin-bottom: 20px;
     padding: 10px;
 }
 
 .activites-cards img {
-    width: 100%; /* L'image remplit la largeur de la card */
-    height: 250px; /* Hauteur fixe pour les images */
+    width: 100%;
+    height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.activites-cards{
-        display: flex;
-        flex-direction: row; /* Place l'image au-dessus du texte */
-        align-items: center;
-        gap: 100px;
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
 
-      
+
+}
+
+
+.activites-cards .card{
+    width: 301px;
+    height: 417px;
+
+
+}
+
+.activites-cards .card-title{
+    padding-left: 8px;
+
+
 }
 /****** FOOTER ***********/
 
-.directionRow{
+.directionRow {
     display: flex;
-	justify-content: flex-start;
+    justify-content: flex-start;
     gap: 300px;
     background-color: var(--main-bg-color);
     padding: 10px;
