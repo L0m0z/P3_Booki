@@ -274,7 +274,7 @@ button {
 }
 
 .information {
-    font-size: 13px;
+    font-size: 16px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -296,6 +296,11 @@ button {
 
 .fa-solid-fa-money-bill {
     padding: 5px;
+}
+
+.Formulaire ::placeholder {
+    font-weight: bold ;
+   
 }
 
 
@@ -440,7 +445,9 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+  
+
 
 
 }
@@ -470,6 +477,11 @@ button {
 
 }
 
+.directionRow h3 {
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
 .directionRow p {
     font-size: 16px;
 }
@@ -480,6 +492,15 @@ button {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .main-container {
+        width: 100%;
+        max-width: 1024px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        flex-direction: row;
+    
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -510,9 +531,68 @@ button {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .directionRow {
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--main-bg-color);
+        padding: 10px;
+        margin-top: 20px;
+    
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .main-container {
+        width: 100%;
+        max-width: 767.98px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        flex-direction: row;
+    
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .directionRow {
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--main-bg-color);
+        padding: 10px;
+        margin-top: 20px;
+    
+    }
+}
     /* ... */
 }
