@@ -534,6 +534,11 @@ button {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+
     
 
     .header {
